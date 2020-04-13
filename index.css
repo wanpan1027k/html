@@ -6,6 +6,7 @@ p{
     text-align: center;
     font-size: 25px;
 }
+//フェイドイン
 html{ 
   font-size:40px;
   opacity:0;
