@@ -1,38 +1,87 @@
-body {
-			padding-top: 50px;
-			background-color: lightgray;
-		}
+/*スプリットレイアウト始まり*/
+html,body{
+	height:100%;
+	margin:0;
+	padding:0;
+}
+ 
+* {
+	box-sizing:border-box;
+}
+ 
+.split-box{
+	position:absolute;
+	width:50%;
+	height:100%;
+	padding:1em;
+}
+ 
+.left-box {
+	left:0;
+	background-image:url(https://www.pakutaso.com/shared/img/thumb/PAK66_tokainobiru20130525_TP_V.jpg);
+	color:#ffffff;
+}
+ 
+.right-box {
+    right:0;
+    background-image: url(https://www.beiz.jp/images_M/sea-ocean/sea-ocean_00158.jpg);
+	overflow-y:scroll;
+	
+}
+ 
+.left-box a{
+	color:#ffffff;
+	display:block;
+}
+ 
+@media screen and (max-width:600px) { 
+	.split-box {
+		position:relative;
+		width:100%;
+		height:auto;
+ 
+    }
+/*スプリットレイアウトおわり*/
+}
+.font{
+    font-size: 70px;
+    padding-left: 200px;
+    padding-top: 100px;
+}
+ul{
+    font-size: 40px;
+}
 
-		.starter-template {
-			padding: 40px 15px;
-			background-color: white;
-		}
-.big-bg{
-  background-size: cover;
-  background-position: center top;
-  background-repeat:  no-repeat;
-}
-html{ 
-  font-size:40px;
-  opacity:0;
-  animation-name: kuma; 
-  animation-duration: 5s; 
-  animation-iteration-count:2;
-  animation-fill-mode: forwards; 
-}
-@keyframes kuma {
-0% {
-  opacity: 0;
-  color:#000;
-}
-90% {
- opacity: 1;
- color:#000;
-}
- 100% {
-  opacity: 1;
-  color:#000;
-} 
+h1{
 
+    font-size: 70px;
+    padding-left: 210px;
 }
 
+h2{
+    font-size: 60px;
+}
+strong{
+    font-size: 40px;
+}
+h3{
+    font-size: 60px;
+}
+@keyframes RightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*スライドイン*/
+strong,p,ul,h1,h2,h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  animation-duration: 3s;/* アニメーション時間 */
+  animation-name: RightToLeft;/* アニメーション名 */
+  animation-iteration-count: inherit/* アニメーションの繰り返し（無限）*/
+}
