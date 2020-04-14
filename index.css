@@ -1,12 +1,17 @@
-body{
-  text-align: center;
+body {
+			padding-top: 50px;
+			background-color: lightgray;
+		}
 
+		.starter-template {
+			padding: 40px 15px;
+			background-color: white;
+		}
+.big-bg{
+  background-size: cover;
+  background-position: center top;
+  background-repeat:  no-repeat;
 }
-p{
-    text-align: center;
-    font-size: 25px;
-}
-//フェイドイン
 html{ 
   font-size:40px;
   opacity:0;
@@ -28,4 +33,6 @@ html{
   opacity: 1;
   color:#000;
 } 
+
 }
+
