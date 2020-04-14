@@ -81,7 +81,10 @@ h3{
 /*スライドイン*/
 strong,p,ul,h1,h2,h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  animation-duration: 3s;/* アニメーション時間 */
-  animation-name: RightToLeft;/* アニメーション名 */
-  animation-iteration-count: inherit/* アニメーションの繰り返し（無限）*/
+  animation-duration: 3s;
+  animation-name: RightToLeft;
+  animation-iteration-count: inherit;
+	  
+	  
+	  
 }
