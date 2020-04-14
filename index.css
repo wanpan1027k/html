@@ -67,6 +67,9 @@ strong{
 h3{
     font-size: 60px;
 }
+P{
+    padding-left: 20PX;
+}
 @keyframes RightToLeft {
   0% {
     opacity: 0;
