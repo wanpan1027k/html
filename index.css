@@ -84,7 +84,7 @@ P{
 /*スライドイン*/
 strong,p,ul,h1,h2,h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-name: RightToLeft;
   animation-iteration-count: inherit;
 	  
